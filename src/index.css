@@ -36,10 +36,18 @@ li:hover::before {
     cursor: pointer;
 }
 
-select {
+select,
+option,
+input {
     outline: none;
 }
 
-option {
+select:focus,
+option:focus {
     outline: none;
+}
+
+.card {
+    background: url(/src/Assets/img/bg.jpg);
+
 }
