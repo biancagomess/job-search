@@ -1,7 +1,7 @@
 import React from 'react'
-import success from "../../Assets/img/success.png"
-import team from "../../Assets/img/team.png"
-import world from "../../Assets/img/world.png"
+import success from "../../assets/img/success.png"
+import team from "../../assets/img/team.png"
+import world from "../../assets/img/world.png"
 
 import Inforcareer from '../InfoCareer/InforCareer'
 
