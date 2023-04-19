@@ -1,12 +1,12 @@
 import React from 'react'
 
 import { CgTime } from 'react-icons/cg'
-import ford from '../../Assets/logos/logo-ford.png'
-import google from '../../Assets/logos/logo-google.png'
-import microsoft from '../../Assets/logos/logo-microsoft.png'
-import next from '../../Assets/logos/logo-next.png'
-import nike from '../../Assets/logos/logo-nike.png'
-import yahoo from '../../Assets/logos/logo-yahoo.png'
+import ford from '../../assets/logos/logo-ford.png'
+import google from '../../assets/logos/logo-google.png'
+import microsoft from '../../assets/logos/logo-microsoft.png'
+import next from '../../assets/logos/logo-next.png'
+import nike from '../../assets/logos/logo-nike.png'
+import yahoo from '../../assets/logos/logo-yahoo.png'
 import Search from '../SearchDiv/Search'
 
 
