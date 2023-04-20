@@ -104,7 +104,7 @@ select {
     width: 100%;
   }
 
-  .login-form-bt {
+  .login-form-bt, .register-form-bt {
     background: linear-gradient(to left, #0aa396, #575acd);
     background: -webkit-linear-gradient(to left, #0aa396, #575acd);
     background: -o-linear-gradient(to left, #0aa396, #575acd);
