@@ -51,3 +51,69 @@ option:focus {
     background: url(/src/Assets/img/bg.jpg);
 
 }
+
+select {
+    outline: none;
+  }
+
+  option {
+    outline: none;
+  }
+
+  .focus-input::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+
+    background: linear-gradient(to left, #0aa396, #575acd);
+    background: -webkit-linear-gradient(to left, #0aa396, #575acd);
+    background: -o-linear-gradient(to left, #0aa396, #575acd);
+    background: -moz-linear-gradient(to left, #0aa396, #575acd);
+  }
+
+  .focus-input::after {
+    content: attr(data-placeholder);
+    font-size: 15px;
+    color: #999999;
+    line-height: 1.2;
+    display: block;
+    position: absolute;
+    top: 16px;
+    left: 0px;
+    width: 100%;
+    padding-left: 5px;
+
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+  }
+
+  .input:focus + .focus-input::after {
+    top: -15px
+  }
+
+  .input:focus + .focus-input::before {
+    width: 100%;
+  }
+
+  .login-form-bt {
+    background: linear-gradient(to left, #0aa396, #575acd);
+    background: -webkit-linear-gradient(to left, #0aa396, #575acd);
+    background: -o-linear-gradient(to left, #0aa396, #575acd);
+    background: -moz-linear-gradient(to left, #0aa396, #575acd);
+  }
+
+  .inputValue + .focus-input::after{
+    top: -15px
+  }
+  .inputValue + .focus-input::before{
+    width: 100%;
+  }
