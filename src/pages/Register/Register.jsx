@@ -1,18 +1,28 @@
 import React from 'react'
 
 import { Link } from 'react-router-dom'
-
 import { useState } from 'react'
+
 import LayoutBackground from '../../components/Layout-Background/LayoutBackground'
+import { api } from "../../services/api"
 
 const Register = () => {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const [name, setName] = useState("")
 
+  const createUser = async (e) => {
+    e.preventDefault();
+    const data = {
+      email, password, name
+    }
+    const response = await api.post("/create", data);
+    console.log(response.data)
+  }
+
   return (
     <LayoutBackground>
-      <form className="register-form w-full">
+      <form onSubmit={createUser} className="register-form w-full">
         <span className='register-form-title block text-3xl text-greenColor leading-5 text-center p-7'>
           Create an Account
         </span>
@@ -22,7 +32,7 @@ const Register = () => {
             className={name != "" ? 'input inputValue text-2xl leading-5 border-none block w-full h-11 bg-transparent py-0 px-2 text-inputColor focus:outline-none' : 'input text-2xl leading-5 border-none block w-full h-11 bg-transparent py-0 px-2 text-inputColor focus:outline-none'}
             type="text"
             value={name}
-            onChange={e => setEmail(e.target.value)}
+            onChange={e => setName(e.target.value)}
           />
           <span className='focus-input absolute block w-full h-full top-0 left-0 pointer-events-none text-inputColor' data-placeholder="Name"></span>
         </div>
@@ -48,7 +58,7 @@ const Register = () => {
         </div>
 
         <div className="container-register-form-btn flex flex-wrap justify-center pb-3">
-          <button className='register-form-bt text-base border-none rounded-lg text-white leading-5 uppercase flex justify-center items-center w-full h-12 hover:cursor-pointer'>
+          <button type="submit" className='register-form-bt text-base border-none rounded-lg text-white leading-5 uppercase flex justify-center items-center w-full h-12 hover:cursor-pointer'>
             register
           </button>
         </div>

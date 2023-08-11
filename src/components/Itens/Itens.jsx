@@ -3,6 +3,7 @@ import React from 'react'
 import { BsGithub, BsLinkedin } from "react-icons/bs"
 
 const Itens = () => {
+
     return (
         <>
             <div className='grid'>
@@ -42,8 +43,8 @@ const Itens = () => {
                         jobsearch@gmail.com 
                     </small>
                     <div className='socialIcons flex gap-4 py-[1rem] '>
-                        <BsLinkedin className='bg-white p-[5px] h-[35px] w-[35px] rounded-full text-greenColor icon'/>
-                        <BsGithub className='bg-white p-[5px] h-[35px] w-[35px] rounded-full text-greenColor icon'/>
+                       <a href="https://www.linkedin.com/" target='_blank'> <BsLinkedin className='bg-white p-[5px] h-[35px] w-[35px] rounded-full text-greenColor icon' src="www.google.com"/></a>
+                       <a href="https://github.com/" target='_blank'> <BsGithub className='bg-white p-[5px] h-[35px] w-[35px] rounded-full text-greenColor icon'/></a>
                     </div>
                 </div>
             </div>
