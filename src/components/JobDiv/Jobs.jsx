@@ -101,13 +101,32 @@ const Data = [
     desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. ',
     company: 'Google'
   },
+  {
+    id: 11,
+    image: google,
+    title: "Web Developer",
+    time: "Now",
+    location: "Canada",
+    desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. ',
+    company: 'Google'
+  },
+  {
+    id: 12,
+    image: yahoo,
+    title: "CTO",
+    time: "10 days",
+    location: "U.S.A",
+    desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. ',
+    company: 'Yahoo'
+  },
 ]
 
 const Jobs = () => {
+
   return (
     <div>
       <Search />
-      <div className="jobContainer flex gap-10 justify-center flex-wrap items-center py-10">
+      <div className="jobContainer flex gap-6 justify-center flex-wrap items-center py-10">
         {Data.map(({ id, image, title, time, location, desc, company }) => {
           return (
             <div key={id} className="group group/item singlesJob w-[250px] p-[20px] bg-white rounded-[10px] hover:bg-greenColor shadow-lg shadow-greyIsh-400/700 hover:shadow-lg">

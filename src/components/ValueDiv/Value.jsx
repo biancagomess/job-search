@@ -13,7 +13,7 @@ const Value = () => {
       </h1>
       <div className="grid gap-[10rem] grid-cols-3 items-center">
         <div className="singleGrid rounded-[10px] hover:bg-[#eeedf7] p-[1.5rem]">
-          <div className='flex items-center gap-3'>
+          <div className=' items-center gap-3'>
             <div className="imgDiv p-[4px] rounded-[.8rem] bg-[#eeedf7] h-[40px] w-[40px] flex items-center justify-center">
               <img src={world} alt="present around the world" className='w-[100%] ' />
             </div>
@@ -26,7 +26,7 @@ const Value = () => {
           </p>
         </div>
         <div className="singleGrid rounded-[10px] hover:bg-[#f7edf5] p-[1.5rem]">
-          <div className='flex items-center gap-3'>
+          <div className=' items-center gap-3'>
             <div className="imgDiv p-[4px] rounded-[.8rem] bg-[#f7edf5] h-[40px] w-[40px] flex items-center justify-center">
               <img src={success} alt="present around the world" className='w-[100%] ' />
             </div>
@@ -35,11 +35,11 @@ const Value = () => {
             </span>
           </div>
           <p className='text-[14px] text-textColor opacity-[.7] py-[1rem] font-semibold '>
-            We have the best search engines in the employability sector to provide you with the best experience
+          We have an exceptional and reference team. Highly qualified and committed and ready to provide great service
           </p>
         </div>
         <div className="singleGrid rounded-[10px] hover:bg-[#fcfae3] p-[1.5rem]">
-          <div className='flex items-center gap-3'>
+          <div className=' items-center gap-3'>
             <div className="imgDiv p-[4px] rounded-[.8rem] bg-[#fcfae3] h-[40px] w-[40px] flex items-center justify-center">
               <img src={team} alt="present around the world" className='w-[100%] ' />
             </div>
@@ -48,7 +48,7 @@ const Value = () => {
             </span>
           </div>
           <p className='text-[14px] text-textColor opacity-[.7] py-[1rem] font-semibold '>
-            We have a highly qualified team ready to serve you
+            We have a highly qualified and committed team, ready to serve you.
           </p>
         </div>
       </div>

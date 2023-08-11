@@ -12,7 +12,7 @@ const Footer = () => {
             Search
           </h1>
         </div>
-        <p className='text-white pb-[13px] opacity-70 leading-7'>
+        <p className='pb-[13px] opacity-70 leading-7 text-zinc-900'>
           Here you can search the best companies, employers and candidates.                  
         </p>
       </div>

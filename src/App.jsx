@@ -9,25 +9,30 @@ import Login from './pages/Login/Login'
 import Register from './pages/Register/Register'
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { AuthProvider } from './context/auth'
+import { AppRouter } from "./routes"
+
 
 
 const App = () => {
   return (
     <div className='w-[85%] m-auto bg-white'>
       <BrowserRouter>
-        <Routes>
-          <Route path='/' element={<Layout>
-          </Layout>}>
-            <Route path="/jobs" element={<Jobs></Jobs >} />
-            <Route path="/blog" element={<Blog></Blog >} />
-            <Route path="/companies" element={<Companies></Companies >} />
-            <Route path="/login" element={<Login></Login >} />
-            <Route path="/about" element={<About></About >} />
-            <Route path="/register" element={<Register></Register>} />
-            <Route path="/contact" element={<Contact></Contact>} />
-            <Route path='*' element={<div> Page not found! Please verify the correct link</div>} />
-          </Route>
-        </Routes>
+        <AuthProvider>
+          <AppRouter/>
+          {/* <Routes>
+            <Route path='/' element={<Layout></Layout>}>
+              <Route path="/jobs" element={<Jobs></Jobs >} />
+              <Route path="/blog" element={<Blog></Blog >} />
+              <Route path="/companies" element={<Companies></Companies >} />
+              <Route path="/login" element={<Login></Login >} />
+              <Route path="/about" element={<About></About >} />
+              <Route path="/register" element={<Register></Register>} />
+              <Route path="/contact" element={<Contact></Contact>} />
+              <Route path='*' element={<div> Page not found! Please verify the correct url</div>} />
+            </Route>
+          </Routes> */}
+        </AuthProvider>
       </BrowserRouter>
     </div>
   )
