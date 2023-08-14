@@ -14,6 +14,9 @@ export default {
         'inputColor': '#575acd',
         'white': '#ffffff'
       },
+      animation: {
+        'spin-slow': 'spin 50s linear ended',
+      }
     },
   },
   plugins: [],
